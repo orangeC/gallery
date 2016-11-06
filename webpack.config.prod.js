@@ -35,8 +35,14 @@ module.exports = {
       loader: 'style!css!autoprefixer'
     },
     {
+      test: /\.json$/,
+      loader: 'json-loader'
+    },
+    {
       test: /\.(jpe?g|png)$/,
       loader: 'file-loader'
-    }]
+    },
+    {test: /\.scss$/, loader: "style!css!sass"}
+    ]
   }
 };
