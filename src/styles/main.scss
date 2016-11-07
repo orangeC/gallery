@@ -3,6 +3,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
     background-color: #fff;
 }
@@ -28,6 +29,23 @@ html, body {
 	height: 100%;
 	overflow: hidden;
 	background-color: #ddd;
+	@at-root{
+		.img-figure{
+			width: 320px;
+			height: 360px;
+			margin: 0;
+			padding: 40px;
+			background-color: #FFF
+		}
+		.figcaption{
+			text-align: center;
+			.img-title{
+				margin: 20px 0 0 0 ;
+				color: #a7a0a2;
+				font-size: 16px;
+			}
+		}
+	}
 }
 /* image -- end */
 
